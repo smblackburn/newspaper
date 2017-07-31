@@ -261,7 +261,7 @@ class Article(object):
             self.fetch_images()
 
         self.is_parsed = True
-        self.release_resources()
+        # self.release_resources()
 
     def fetch_images(self):
         if self.clean_doc is not None:
