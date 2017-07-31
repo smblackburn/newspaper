@@ -44,8 +44,8 @@ MONITOR_LOGFILE = os.path.join(
 MEMO_FILE = 'memoized'
 MEMO_DIR = os.path.join(TOP_DIRECTORY, MEMO_FILE)
 
-if not os.path.exists(MEMO_DIR):
-    os.mkdir(MEMO_DIR)
+# if not os.path.exists(MEMO_DIR):
+#     os.mkdir(MEMO_DIR)
 
 # category and feed cache
 CF_CACHE_DIRECTORY = 'feed_category_cache'
