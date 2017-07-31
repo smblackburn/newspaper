@@ -31,7 +31,8 @@ NLP_STOPWORDS_EN = os.path.join(
 
 DATA_DIRECTORY = '.newspaper_scraper'
 
-TOP_DIRECTORY = os.path.join(os.path.expanduser("~"), DATA_DIRECTORY)
+# TOP_DIRECTORY = os.path.join(os.path.expanduser("~"), DATA_DIRECTORY)
+TOP_DIRECTORY = os.path.join("/home/hadoop", DATA_DIRECTORY)
 if not os.path.exists(TOP_DIRECTORY):
     os.mkdir(TOP_DIRECTORY)
 
