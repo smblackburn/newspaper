@@ -31,10 +31,9 @@ NLP_STOPWORDS_EN = os.path.join(
 
 DATA_DIRECTORY = '.newspaper_scraper'
 
-# TOP_DIRECTORY = os.path.join(os.path.expanduser("~"), DATA_DIRECTORY)
-TOP_DIRECTORY = os.path.join("/tmp/newspaper", DATA_DIRECTORY)
-if not os.path.exists(TOP_DIRECTORY):
-    os.mkdir(TOP_DIRECTORY)
+TOP_DIRECTORY = os.path.join(os.path.expanduser("~"), DATA_DIRECTORY)
+# if not os.path.exists(TOP_DIRECTORY):
+#     os.mkdir(TOP_DIRECTORY)
 
 # Error log
 LOGFILE = os.path.join(TOP_DIRECTORY, 'newspaper_errors_%s.log' % __version__)
@@ -52,7 +51,7 @@ if not os.path.exists(MEMO_DIR):
 CF_CACHE_DIRECTORY = 'feed_category_cache'
 ANCHOR_DIRECTORY = os.path.join(TOP_DIRECTORY, CF_CACHE_DIRECTORY)
 
-if not os.path.exists(ANCHOR_DIRECTORY):
-    os.mkdir(ANCHOR_DIRECTORY)
+# if not os.path.exists(ANCHOR_DIRECTORY):
+#     os.mkdir(ANCHOR_DIRECTORY)
 
 TRENDING_URL = 'http://www.google.com/trends/hottrends/atom/feed?pn=p1'
