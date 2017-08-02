@@ -255,7 +255,8 @@ class Article(object):
             if not text_only:
                 self.set_article_html(article_html)
 
-            self.set_text(text)
+            self.text = text
+            # self.set_text(text)
 
         if not text_only and self.config.fetch_images:
             self.fetch_images()
